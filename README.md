@@ -40,7 +40,7 @@ i.e "./project random | java -jar drawapp-4.0.jar"
 Passing in "file" makes the program generate the map by copying what is inputted into "arenafile.txt".
 i.e "./project file | java -jar drawapp-4.0.jar"
 
-#NOTES: 
+# NOTES: 
 **IMPORTANT** Depending on your screen size, larger arenas may have some of their tiles partly offscreen, due to how drawapp blocks out the bottom part of the window with the output window. The current tile size constants are set to accommodate my 1920x1080 24 inch monitor, if you are running this on something smaller and notice that some tiles do not fully appear in the window, change the max, mid, min tilesize constants in the constants file. By default these are set to 20,10,5. After testing on my laptop, 10,10,5 works well. Make sure to save and recompile! This should not be an issue on normal-sized monitors.
 
 When using file to manually input arenas, '#' represents a wall, 'M' represents a marker, 'H' represents home (robot start tile) and ' ' represents a floor (empty tile)
