@@ -1,18 +1,19 @@
 # BFS_visualiser
 
 # General Info 
-This program displays a robot pathfinding through an arena (2D tilemap grid) to collect all the markers on the map and return back home, using drawapp-4.0.jar
+This program displays a robot pathfinding through an arena (2D tilemap grid) to collect all the markers on the map and return back home, using drawapp-4.0.jar \
 The program supports two modes when creating the arena - random generation and text file input. The mode is chosen through command line inputs from the user.
 
 # Description of how the program itself works 
-The arena itself contains obstacles (walls) that the robot must path around to reach the markers.
+The arena itself contains obstacles (walls) that the robot must path around to reach the markers. \
 The robot, using a breadth first search pathfinding algorithm, always finds the shortest path from tile to tile. This means that the path it takes from its home
-to the markers and back will always be the most optimal.
+to the markers and back will always be the most optimal. \
 Randomly generated arenas contain randomly placed obstacles, and are between 20-40 in width and height (w/h are both randomly selected)
 
 The pathfinding works as follows:
-First, use BFS to "mentally" locate a path to the closest target (i.e marker) tile, keeping track of which tiles lead to which (parent tiles of each tile). When the target tile is reached,
-trace the path back to the starting tile (by following the parent tiles of each tile). This path will be in reverse, as it is going backwards from the target to the start, so it must be reversed. 
+First, use BFS to "mentally" locate a path to the closest target (i.e marker) tile, keeping track of which tiles lead to which (parent tiles of each tile). \
+When the target tile is reached,
+trace the path back to the starting tile (by following the parent tiles of each tile). This path will be in reverse, as it is going backwards from the target to the start, so it must be reversed.  \
 The traced path is held in queue, which acts as a move buffer for the robot, as it can deduce which direction to turn to and go forward based on a tile's location relative
 to itself. As such, it can follow the path of tiles held in the buffer until it reaches the target tile.
 
