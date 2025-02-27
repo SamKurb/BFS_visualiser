@@ -17,14 +17,14 @@ The traced path is held in queue, which acts as a move buffer for the robot, as 
 to itself. As such, it can follow the path of tiles held in the buffer until it reaches the target tile.
 
 # Information on the different files 
-arena.c - contains definitions for the arena and tile structs, as well as functions responsible for initialising the base of the arena
-constants - contains constants responsible for different aspects of the program
-controller - contains functions used to move the robot from tile to tile, by translating information obtained from BFS
-display - contains functions responsible for drawing and updating everything on the screen
-filegen - contains functions responsible for generating an arena based on text file input (the designated text file is "arenafile.txt"
-randomgen - contains functions responsible for the random generation of the arena and robot's initial state, mainly with respect to obstacles/walls inside
-robot - contains definitions of the robot struct as well as functions related to the base actions it can do (i.e turnleft) as well as other functions
-search.c - contains functions related to breadth-first search and pathfinding, as well as the queue implementation used for it
+arena.c - contains definitions for the arena and tile structs, as well as functions responsible for initialising the base of the arena \
+constants - contains constants responsible for different aspects of the program \
+controller - contains functions used to move the robot from tile to tile, by translating information obtained from BFS \
+display - contains functions responsible for drawing and updating everything on the screen \
+filegen - contains functions responsible for generating an arena based on text file input (the designated text file is "arenafile.txt" \
+randomgen - contains functions responsible for the random generation of the arena and robot's initial state, mainly with respect to obstacles/walls inside \
+robot - contains definitions of the robot struct as well as functions related to the base actions it can do (i.e turnleft) as well as other functions \
+search.c - contains functions related to breadth-first search and pathfinding, as well as the queue implementation used for it \
 
 # Instructions on use 
 To compile the program, at least on windows, run "gcc -o [exe name] *c"
