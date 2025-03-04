@@ -13,7 +13,7 @@ Randomly generated arenas contain randomly placed obstacles, and are between 20-
 The pathfinding works as follows:
 First, use BFS to "mentally" locate a path to the closest target (i.e marker) tile, keeping track of which tiles lead to which (parent tiles of each tile). \
 When the target tile is reached,
-trace the path back to the starting tile (by following the parent tiles of each tile). This path will be in reverse, as it is going backwards from the target to the start, so it must be reversed.  \
+trace the path back to the starting tile (by following the parent tiles of each tile). This path will be in reverse, as it is going backwards from the target to the start, so it must be reversed to get the correct path.  \
 The traced path is held in queue, which acts as a move buffer for the robot, as it can deduce which direction to turn to and go forward based on a tile's location relative
 to itself. As such, it can follow the path of tiles held in the buffer until it reaches the target tile.
 
