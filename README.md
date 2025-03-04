@@ -1,7 +1,7 @@
 # BFS_visualiser
 
 # General Info 
-This program displays a robot pathfinding through an arena (2D tilemap grid) to collect all the markers on the map and return back home, using drawapp-4.0.jar \
+This program displays a an agent (dubbed robot) pathfinding through an arena (2D tilemap grid) to collect all the markers on the map and return back home, using a basic graphics library/API to display the stuff \
 The program supports two modes when creating the arena - random generation and text file input. The mode is chosen through command line inputs from the user.
 
 # Description of how the program itself works 
