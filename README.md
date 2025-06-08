@@ -51,3 +51,9 @@ Also ensure that all markers are accessible.
 If you would like the robot to move faster, lower the "cooldown" constant in the constants file
 
 Thank you for reading!
+
+# KNOWN BUGS:
+- Passing in no command-line argument leads to an error
+
+# OTHER NOTES
+- This was just a short program written for a small, 5% assignment, if anyone has any criticisms on code structure, variable naming or any other practises please let me know! The whole point of the assignment was to write some sort of program while trying to follow best practises programming-wise. Thanks
